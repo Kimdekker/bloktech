@@ -1,0 +1,28 @@
+<%- include('partials/head') %>
+
+<body>
+
+    <%- include('partials/header') %>
+
+    <main>
+        <section class="welcome-section">
+            <h1>Create an account</h1>
+            <p>Fill in your prefered information to create your account</p>
+            <form action="/register" method="POST">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="password">Wachtwoord:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Register">
+              </form>
+        </section>
+    </main>
+
+
+    <%- include('partials/footer') %>
+
+
+</body>
+</html>
